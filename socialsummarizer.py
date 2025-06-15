@@ -22,8 +22,10 @@ def get_cultural_stories() -> str:
     with open("cultural_prompt.txt", "r") as file:
         cultural_prompt = file.read()
 
+    current_date = datetime.date.today()
+
     search_prompt = (
-        f"Today's date is {datetime.now().strftime("%Y-%m-%d")}. {cultural_prompt}"
+        f"Today's date is {current_date}. {cultural_prompt}"
     )
 
     payload = {
