@@ -27,7 +27,7 @@ def get_cultural_stories() -> str:
     )
 
     payload = {
-            "model": "perplexity/gpt-4o-mini-search-preview",  
+            "model": "openai/gpt-4o-mini-search-preview",  
             "messages": [{"role": "user", "content": search_prompt}],
         }
 
